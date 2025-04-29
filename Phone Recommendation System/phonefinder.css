@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #a6b1e1;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #424874;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Search Section */
+.search-section {
+    margin: 20px 0;
+    position: relative;
+}
+
+#search {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 25px;
+    border: 2px solid #424874;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+#suggestions {
+    position: absolute;
+    background: #a6b1e1;
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background: #eee;
+}
+
+#filterBtn {
+    background: #424874;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#filterBtn:hover {
+    background: #424874;
+}
+
+/* Filter Panel */
+#filterPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#filterPanel.open {
+    transform: translateX(0);
+}
+
+.close-btn {
+    background: #424874;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.filter-group label {
+    font-weight: bold;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#applyFilters {
+    background: #424874;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#applyFilters:hover {
+    background: #424874;
+}
+
+/* Phones Grid */
+.phones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.phone-card {
+    background: #a6b1e1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buy-now-btn {
+    background-color: #424874;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background: #424874;
+}

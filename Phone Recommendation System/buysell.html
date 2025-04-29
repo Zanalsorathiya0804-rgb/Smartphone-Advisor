@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy & Sell Smartphones</title>
+    <link rel="stylesheet" href="buysell.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BUY/SELL PHONE</h1>
+        
+        <div class="sell-section">
+            <h2>Sell Your Phone</h2>
+            <input type="text" id="brand" placeholder="Brand" class="input-field">
+            <input type="text" id="model" placeholder="Model" class="input-field">
+            <input type="text" id="storage" placeholder="Storage (e.g. 128GB)" class="input-field">
+            <input type="text" id="camera" placeholder="Camera Quality (e.g. 48MP)" class="input-field">
+            <input type="number" id="price" placeholder="Selling Price" class="input-field">
+            <button onclick="postForSale()">Post for Sale</button>
+        </div>
+
+        <div class="buy-section">
+            <h2>Available Phones</h2>
+            <ul id="phoneList"></ul>
+        </div>
+    </div>
+    <script src="buysell.js"></script>
+</body>
+</html>

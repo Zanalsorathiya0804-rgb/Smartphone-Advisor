@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a6b1e1;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #a6b1e1;
+    color: black;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Selection Section */
+.selection-container {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+select, button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #424874;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #424874;
+}
+
+/* Prediction Sections */
+.prediction-result {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart */
+canvas {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    select, button {
+        width: 100%;
+    }
+}

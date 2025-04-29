@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Sales & Price Trends</title>
+    <link rel="stylesheet" href="salestrends.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Phone Sales & Price Trends</h1>
+    </header>
+
+    <!-- Phone Selection -->
+    <section class="selection-container">
+        <h2>Select a Phone Model</h2>
+        <select id="phoneSelect">
+            <option value="iphone"> iPhone 15</option>
+            <option value="samsung"> Samsung S23</option>
+            <option value="oneplus"> OnePlus 11</option>
+            <option value="pixel">Google Pixel 7</option>
+        </select>
+        <button onclick="predictSalesAndPrice()">Predict Sales & Price</button>
+    </section>
+
+    <!-- Sales Prediction -->
+    <section class="prediction-result">
+        <h2> Sales Trend</h2>
+        <p><strong>Current Sales:</strong> <span id="currentSales">-</span> units</p>
+        <p><strong>Predicted Future Sales:</strong> <span id="futureSales">-</span> units</p>
+        <canvas id="salesChart"></canvas>
+    </section>
+
+    <!-- Price Prediction -->
+    <section class="prediction-result">
+        <h2> Price Trend</h2>
+        <p><strong>Current Price:</strong> $<span id="currentPrice">-</span></p>
+        <p><strong>Predicted Future Price:</strong> $<span id="futurePrice">-</span></p>
+        <canvas id="priceChart"></canvas>
+    </section>
+
+    <script src="salestrends.js"></script>
+
+</body>
+</html>

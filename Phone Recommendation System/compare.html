@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Comparison</title>
+    <link rel="stylesheet" href="compare.css">
+</head>
+<body>
+
+    <!-- Compare Phones Title -->
+    <h1>COMPARE PHONE</h1>
+
+    <!-- Phone Selection -->
+    <div class="phone-selection">
+        <div>
+            <label for="phone1">Select Phone 1:</label>
+            <select id="phone1">
+                <option value="iphone">iPhone 15 Pro</option>
+                <option value="samsung">Samsung Galaxy S24 Ultra</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="phone2">Select Phone 2:</label>
+            <select id="phone2">
+                <option value="iphone">iPhone 15 Pro</option>
+                <option value="samsung">Samsung Galaxy S24 Ultra</option>
+            </select>
+        </div>
+
+        <button id="compare-btn">Add to Compare</button>
+    </div>
+
+    <!-- Comparison Table -->
+    <div id="comparison-section" class="hidden">
+        <h3>Comparison Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th id="phone1-name"></th>
+                    <th id="phone2-name"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Screen Size</td><td id="phone1-screen"></td><td id="phone2-screen"></td></tr>
+                <tr><td>RAM</td><td id="phone1-ram"></td><td id="phone2-ram"></td></tr>
+                <tr><td>Processor</td><td id="phone1-processor"></td><td id="phone2-processor"></td></tr>
+                <tr><td>Storage</td><td id="phone1-storage"></td><td id="phone2-storage"></td></tr>
+                <tr><td>Battery Life</td><td id="phone1-battery"></td><td id="phone2-battery"></td></tr>
+                <tr><td>Camera</td><td id="phone1-camera"></td><td id="phone2-camera"></td></tr>
+                <tr><td>OS</td><td id="phone1-os"></td><td id="phone2-os"></td></tr>
+                <tr><td>Price</td><td id="phone1-price"></td><td id="phone2-price"></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Buy Now & Read Reviews Buttons -->
+        <div class="cta-buttons">
+            <button onclick="buyPhone()">Buy Now</button>
+            <button onclick="readReviews()">Read Reviews</button>
+        </div>
+    </div>
+
+    <script src="compare.js"></script>
+</body>
+</html>

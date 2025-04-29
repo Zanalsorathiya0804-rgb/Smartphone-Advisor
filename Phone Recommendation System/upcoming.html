@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Phones</title>
+    <link rel="stylesheet" href="upcoming.css">
+</head>
+<body>
+
+    <!-- Header for Upcoming Phones -->
+    <header class="upcoming-header">
+        <h1> Upcoming Phones</h1>
+    </header>
+
+    <!-- Hidden Upcoming Phones Section -->
+    <div id="upcoming-section">
+        <h2>Upcoming Phones</h2>
+
+        <!-- Upcoming Phones Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone Model</th>
+                    <th>Expected Release</th>
+                    <th>Key Features</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>iPhone 16 Pro</td>
+                    <td>September 2025</td>
+                    <td>New A18 Chip, Periscope Zoom</td>
+                    <td><button onclick="notifyMe('iPhone 16 Pro')">Notify Me</button></td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S25 Ultra</td>
+                    <td>January 2026</td>
+                    <td>200MP Camera, AI-Powered Features</td>
+                    <td><button onclick="notifyMe('Samsung Galaxy S25 Ultra')">Notify Me</button></td>
+                </tr>
+                <tr>
+                    <td>Google Pixel 9</td>
+                    <td>October 2025</td>
+                    <td>Tensor G4, AI Camera Enhancements</td>
+                    <td><button onclick="notifyMe('Google Pixel 9')">Notify Me</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="upcoming.js"></script>
+</body>
+</html>

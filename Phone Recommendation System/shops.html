@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Shops</title>
+    <link rel="stylesheet" href="shops.css">
+</head>
+<body>
+    <header>📍 Nearby Shops</header>
+
+    <div class="container">
+        <h2 id="phoneName"></h2>
+        
+        <label for="city">Select City:</label>
+        <select id="city">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+
+        <label for="state">Select State:</label>
+        <select id="state">
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+        </select>
+
+        <button id="findShops">Find Shops</button>
+
+        <div id="shopList"></div>
+    </div>
+
+    <script src="shops.js"></script>
+</body>
+</html>

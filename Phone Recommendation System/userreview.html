@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews</title>
+    <link rel="stylesheet" href="userreview.css">
+    <script defer src="userreview.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>User Reviews</h1>
+
+        <!-- Review Form -->
+        <div class="review-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <select id="rating">
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+            <textarea id="review" placeholder="Write your review..." required></textarea>
+            <button onclick="submitReview()">Submit Review</button>
+        </div>
+
+        <!-- Reviews List -->
+        <div class="reviews-container">
+            <h2>Recent Reviews</h2>
+            <div id="reviews-list">
+                <!-- Reviews will appear here -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
