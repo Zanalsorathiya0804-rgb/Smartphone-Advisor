@@ -2,6 +2,7 @@
 
 SmartPhone Advisor is a web application that helps users make informed phone purchasing decisions based on historical sales trends. It also includes features like a used phone marketplace, phone comparison, phone finder, upcoming phone listings, and user reviews — developed using HTML, CSS, and JavaScript.
 
+
 ## Problem Statement
 
 With the rapid growth in smartphone launches, consumers often face confusion when deciding which phone to purchase. The lack of centralized, data-driven insights and tools for comparing devices, tracking trends, and identifying value-for-money options makes decision-making difficult. Additionally, users lack a reliable platform to buy and sell used smartphones conveniently.
