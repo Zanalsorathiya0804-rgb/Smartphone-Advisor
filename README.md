@@ -1,44 +1,45 @@
- # SmartPhone Advisor – Sales-Based Phone Recommendation System
 
-SmartPhone Advisor is a web application that helps users make informed phone purchasing decisions based on historical sales trends. It also includes features like a used phone marketplace, phone comparison, phone finder, upcoming phone listings, and user reviews — developed using HTML, CSS, and JavaScript.
+# Smart Shop — Upcoming Phones (HTML/CSS/JS + Python/Flask)
 
----
-## Problem Statement
+This module helps users discover upcoming phone releases, see timelines, and save a reminder (demo: stores reminders locally).
 
-With the rapid growth in smartphone launches, consumers often face confusion when deciding which phone to purchase. The lack of centralized, data-driven insights and tools for comparing devices, tracking trends, and identifying value-for-money options makes decision-making difficult. Additionally, users lack a reliable platform to buy and sell used smartphones conveniently.
+## Run locally (step-by-step)
+1. Ensure Python 3.8+ is installed.
+2. Unzip the downloaded folder.
+3. (Optional) create & activate a virtualenv:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # macOS / Linux
+   venv\Scripts\activate      # Windows PowerShell
+   ```
+4. Install dependencies:
+   ```bash
+   pip install flask
+   ```
+5. Start the server:
+   ```bash
+   python app.py
+   ```
+   Server runs on **http://127.0.0.1:5004**.
+6. Open the URL in your browser and use the search/filters. Click **Remind me** to save a reminder (demo - data saved in `data/notifications.json`).
 
----
+## API
+- `GET /api/upcoming` — query params: `q, brand, days, all=1, sort=soon|latest`
+- `GET /api/phone/<id>` — get single phone details
+- `POST /api/notify` — JSON `{ phone_id, name, contact, notes }` to store reminder
+- `GET /api/notifications` — list saved reminders (admin helper)
 
-## Proposed Solution
+## Data
+- `data/upcoming_phones.json` — sample upcoming phones with `release_date` in `YYYY-MM-DD`
+- `data/notifications.json` — saved reminder requests
 
-SmartPhone Advisor addresses this by offering a complete web-based system that:
-- Uses historical sales data to recommend trending and reliable phones.
-- Provides tools to compare specifications and prices.
-- Allows users to list and browse used phones for resale.
-- Features a dedicated phone finder with advanced filtering options.
-- Displays upcoming phone launches to help plan future purchases.
-- Includes a review and rating system to support decisions with real user feedback.
+## Next improvements (ideas)
+- Scrape release calendars from trusted sources or use official brand RSS/press feeds to auto-update the list.
+- Integrate email or SMS notification sender (e.g., SendGrid, Twilio) for actual alerts.
+- Add user accounts so reminders are tied to user profiles and delivery preferences.
+- Add calendar export (iCal) or browser push notifications.
+- Add image thumbnails and direct links to official announcement pages.
 
----
-
-## Features
-
-- **Buy and Sell Used Phones** – A platform for users to list and purchase second-hand smartphones.
-- **Sales Prediction** – Uses historical sales data to suggest the best phones to buy.
-- **Compare Phones** – Allows users to compare two phones side-by-side based on specifications.
-- **Phone Finder** – Search and filter phones with an interactive and responsive interface.
-- **Upcoming Phones** – Displays smartphones that are expected to launch soon.
-- **Reviews and Ratings** – Users can read and share opinions on different smartphones.
-
----
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-
-*Note: This version focuses on frontend functionality. Backend integration and dynamic data handling will be added in future updates.*
-
-
-
+## Integration
+- To add to your Smart Shop app, merge `static/*` and `app.py` routes into your main Flask app (avoid port conflicts).
+- You can run this module on the same server and mount routes under `/upcoming`.
