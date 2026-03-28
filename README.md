@@ -177,4 +177,44 @@ Potential future enhancements include:
 - Region-based sales forecasting
 - Real-time market analytics
 
-## Made By Zanal Sorathiya
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/smartphone-sales-prediction.git
+```
+
+Navigate to the project directory
+
+```bash
+cd smartphone-sales-prediction
+```
+
+Install required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+python app.py
+```
+
+---
+
+## Author
+
+**Zanal Sorathiya**  
+Computer Science Student (2026 Graduate)  
+Vadodara, Gujarat, India  
+
+---
+
+## Contact
+
+ Email: zanalsorathiya8405@gmail.com  
+ GitHub: https://github.com/yourusername  
+ LinkedIn: https://linkedin.com/in/yourusername  
