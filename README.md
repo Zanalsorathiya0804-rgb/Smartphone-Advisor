@@ -216,5 +216,3 @@ Vadodara, Gujarat, India
 ## Contact
 
  Email: zanalsorathiya8405@gmail.com  
- GitHub: https://github.com/yourusername  
- LinkedIn: https://linkedin.com/in/yourusername  
