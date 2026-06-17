@@ -56,15 +56,11 @@ Provides graphical insights into market trends, sales predictions, and feature i
 - JavaScript
 
 ### Machine Learning Libraries
-- Scikit-learn
-- TensorFlow / Keras
 - NumPy
 - Pandas
 
 ### Data Visualization
 - Matplotlib
-- Seaborn
-- Plotly
 
 ### Web Technologies
 - HTML
@@ -78,7 +74,6 @@ Provides graphical insights into market trends, sales predictions, and feature i
 ### Development Tools
 - Git
 - GitHub
-- Jupyter Notebook
 
 ---
 
